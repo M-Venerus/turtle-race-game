@@ -32,10 +32,10 @@ while race_running:
             race_running = False
             break
         
-if user_bet == turt.color_str:
-    print("You got it right, you win!")
+if user_bet == winning_turt:
+    print(f"You got it right, the {winning_turt} turtle won!")
 else: 
-    print("Sorry, you lose.")
+    print(f"Sorry, the {user_bet} turtle lost. The {winning_turt} turtle won.")
 
 
 
