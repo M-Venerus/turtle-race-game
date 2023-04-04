@@ -4,7 +4,6 @@ import random
 race_running = False
 screen = t.Screen()
 screen.setup(width=500, height=400)
-user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
 colors = ["red", "orange", "yellow", "green", "blue", "purple"]
 all_turtles = []
 
@@ -18,6 +17,8 @@ for new_color in colors:
     turt.total_distance = 0
     all_turtles.append(turt)
     new_y += 50
+
+user_bet = screen.textinput(title="Make your bet", prompt="Which turtle will win the race? Enter a color: ")
 
 if user_bet:
     race_running = True
