@@ -25,10 +25,10 @@ if user_bet:
 
 while race_running:
     for tur in all_turtles:
-        num = random.randint(1,10)
+        num = random.randint(1,5)
         tur.forward(num)
         tur.total_distance += num
-        if tur.total_distance >= 450:
+        if tur.total_distance >= 425:
             winning_turt = tur.color_str
             race_running = False
             break
